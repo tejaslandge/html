@@ -1,0 +1,47 @@
+<!-- create a basic form in HTML -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Basic Form Example</title>
+</head>
+
+<body>
+
+    <h2>Contact Us</h2>
+
+    <form action="/submit" method="post">
+        <!-- Text Input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+<br>
+        <!-- Email Input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+<br>
+        <!-- Password Input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+<br>
+        <!-- Radio Buttons -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" checked>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+<br>
+        <!-- Checkbox -->
+        <input type="checkbox" id="subscribe" name="subscribe" checked>
+        <label for="subscribe">Subscribe to Newsletter</label>
+<br>
+        <!-- Textarea -->
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea>
+<br>
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
